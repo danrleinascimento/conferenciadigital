@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CONFERÊNCIA DIGITAL E-SCI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+        }
+        .titulo {
+            background-color: #DCDCDC;
+            padding: 1px;
+        }
+        .corpo {
+            background-color: white;
+            padding: 10px;
+        }
+        .texto {
+            text-align: justify;
+			color: #696969;
+			font-size: 14px;
+        }
+        .texto-azul {
+            color: blue;
+			font-size: 12px;
+        }		
+		.texto_red {
+            color: red;
+			font-weight: bold;
+        }
+        .input {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+			align-items: center;
+        }
+        .botaoLimpar {
+            width: 40%;
+            padding: 10px;
+            background-color: #B22222;
+			align-items: center;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+		.botao {
+            width: 40%;
+            padding: 10px;
+            background-color: #4169E1;
+			align-items: center;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }		
+		.botaoAnexo {
+            width: 100%;
+            padding: 10px;
+            background-color: #4169E1;
+			align-items: center;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }		
+		.botaoDeferido {
+            width: 100%;
+            padding: 10px;
+            background-color: #98FB98;
+			align-items: center;
+            color: #008000;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }	
+        .tabela {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .tabela th, .tabela td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .tabela th {
+            background-color: #f2f2f2;
+        }
+		.botao-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">
+            <h4>CONFERÊNCIA DIGITAL E-SCI</h4>
+        </div>
+        <div class="corpo">
+            <p class="texto">Neste espaço você pode conferir a veracidade de um atestado emitido pelo sistema e-SCI do Corpo de Bombeiros Militar de Santa Catarina. Forneça o número do RE, protocolo e o número para conferência digital no documento.</p>
+            <p class="texto texto-azul">Para realizar a conferência de atestados do SIGAT, clique aqui.</p>
+			
+			<p class="texto_red">Registro de Endereço (RE)*</p>
+            <input class="input" type="text" placeholder="RE8383000016A">
+			<p class="texto_red">Protocolo*</p>
+            <input class="input" type="text" placeholder="H8383001493A">
+			<p class="texto_red">Conferência Digital/Autenticação*</p>
+            <input class="input" type="text" placeholder="fcbd4e15544d056cf7762661438abb236aa972fd">
+			<div class="botao-container">
+            <button class="botaoLimpar" align="center">Limpar</button>
+			<br>
+            <button class="botao" align="center">PESQUISAR</button>
+			</div>
+        </div>
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th>PROTOCOLO</th>
+                    <th>SITUAÇÃO</th>
+                    <th>PDF</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>H8383001493A</td>
+                    <td><button class="botaoDeferido" align="center">DEFERIDO</button></td>
+                    <td><button class="botaoAnexo" align="center">Anexos</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
